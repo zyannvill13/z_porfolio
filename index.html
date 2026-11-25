@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: pink; 
+            color: whit;
+            padding: 40px;
+            line-height: 1.6;
+            justify-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 70px;
+            color: rgb(244, 74, 103); 
+        }
+
+        .subheading {
+            font-size: 30px;
+            color: rgb(251, 75, 98); 
+            margin-top: 10px;
+        }
+
+        .portfolio-section {
+            
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+            gap: 30px;
+            max-width: 1200px;
+            margin-top: 100px;
+        }
+
+        .a {
+            background-color: rgb(243, 134, 152);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .a h2 {
+            font-size: 30px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        
+
+        .a a {
+            text-decoration: none;
+            color: white;
+            background-color: rgb(245, 103, 127);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .a a:hover {
+            background-color: rgb(235, 39, 71); 
+            color: pink; 
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px); 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+        }
+
+      
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <div class="subheading">My Activity Collection</div>
+    </header>
+
+    <div class="portfolio-section">
+        <div class="a">
+            <h2>Home Page</h2>
+            <a href="https://zvwebpage.netlify.app/?authuser=0">View Project</a>
+        </div>
+        <div class="a">
+            <h2>Responsive CSS</h2>
+            <a href="https://responsive-css1.netlify.app/?authuser=0" >View Project</a>
+        </div>
+        <div class="a">
+            <h2>Individual Web Pages</h2>
+            <a href="https://jjkweb.netlify.app/?authuser=0" >View Project</a>
+        </div>
+        <div class="a">
+            <h2>Calculator UI Design</h2>
+            <a href="https://fancy-mochi-0d6266.netlify.app/?authuser=0" >View Project</a>
+        </div>
+        <div class="a">
+            <h2>Calculator Functional</h2>
+            <a href="https://cit206calculator.netlify.app/?authuser=0" >View Project</a>
+        </div>
+        <div class="a">
+            <h2>Login & Signup</h2>
+            <a href="https://darling-mousse-8bda57.netlify.app/">View Project</a>
+        </div>
+    </div>
+
+
+</body>
+</html>
